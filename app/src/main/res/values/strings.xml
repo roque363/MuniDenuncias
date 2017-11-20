@@ -13,6 +13,9 @@
     <string name="ubicacion">Ubicacion</string>
     <string name="agregar_foto">Agregar foto</string>
     <string name="selecion">Seleccionar foto</string>
+    <string name="salir">Salir</string>
+    <string name="home">Home</string>
+    <string name="perfil">Perfil</string>
 
 
 </resources>
