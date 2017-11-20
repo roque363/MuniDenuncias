@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roque.munidenuncias.activities.StoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/titulo"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:ems="10"
+            android:gravity="top|center_vertical"
+            android:hint="@string/descripcion"
+            android:layout_marginBottom="12dp"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/txtUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ubicacion"
+            android:layout_marginBottom="12dp"
+            android:inputType="textPersonName" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnfoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:drawableStart="@android:drawable/ic_menu_camera"
+                android:onClick="takePicture"
+                android:text="@string/agregar_foto" />
+
+            <ImageView
+                android:id="@+id/imagen_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnfoto"
+                android:src="@drawable/ic_image" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="callRegister"/>
+
+    </LinearLayout>
+
+</ScrollView>
